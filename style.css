@@ -212,6 +212,12 @@ h3 {
   
 }
 
+.abouttext {
+    text-align: center;
+    font-size: 15px;
+  
+}
+
 .card {
     width: 35rem;
     background-color: rgba(255, 255, 255, 0.29);
@@ -398,18 +404,12 @@ h3 {
 .css {    
     color: #3d8fc6;
 }
-.sass {
-    color: #c6538c;
-}
 
 .bootstrap {
     color: #563d7c;
 }
 .js {
     color: #f0db4f;
-}
-.npm {
-    color: #cb3837;
 }
 
 .node {
@@ -420,16 +420,16 @@ h3 {
     color: #61dafb;
 }
 
+.docker {
+    color: #1587ed;
+}
+
 .git {
     color: #f34f29;
 }
 
 .github {
     color: #181616;
-}
-
-.python {
-    color: #ffd343;
 }
 
 .footer {
@@ -440,9 +440,6 @@ h3 {
     font-size: 1.5rem;    
 }
 
-.heart {
-    color: #e54848;
-}
 .footer p {
     position: absolute;
     left: 50%;

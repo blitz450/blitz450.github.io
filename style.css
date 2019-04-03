@@ -8,6 +8,8 @@ html {
     font-family: sans-serif;
     font-size: 62.5%;
     overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -378,10 +380,6 @@ h3 {
     color: #0069c0;
 }
 
-
-.heading-skills {
-    
-}
 .skills {
     grid-column: full-start / full-end;
     text-align: center;

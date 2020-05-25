@@ -417,12 +417,22 @@ h3 {
     align-items: center;
 }
 
-.skill, .contact {
+.skill {
     height: 15rem;
     width: 15rem;
     font-size: 9rem;
     margin: 1.5rem;
     color: #333;
+}
+
+.contact{
+    font-size: 9rem;
+    margin: 1.5rem;
+    color: #333;
+}
+
+.contact:hover{
+    color: #2485c5;
 }
 
 .html {

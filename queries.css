@@ -105,9 +105,3 @@
     }
      
 }
-@media all and (max-height: 525px)  {
-    *{
-        color: chartreuse;
-    }
-    
-}

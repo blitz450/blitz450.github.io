@@ -13,11 +13,12 @@
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="queries.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <title>Saurabh Chauhan</title>
 </head>
 
@@ -45,7 +46,6 @@
       coding
     </div>
   </div>
-  <br>
   <section class="about" id="about">
     <h2 class="heading" data-aos="fade">About</h2>
     <div class="bio-container">
@@ -104,10 +104,10 @@
       dolore id voluptas facilis cumque.
     </p>
   </section>
-  <br>
   <section class="projects" id="projects">
     <h2 class="heading" data-aos="fade">Projects</h2>
-    <div class="port-container">
+    <div class="port-container js-flickity" data-aos="fade-up"
+      data-flickity-options='{ "cellAlign": "center", "contain": true , "freeScroll": true}'>
       <div class="photo-container " data-aos="fade-up">
         <div class="card">
           <div class="img-frame">
@@ -181,7 +181,6 @@
       </div>
     </div>
   </section>
-  <br>
   <section class="skills" id="skills">
     <h2 class="heading" data-aos="fade" data-aos-offset="250"> Skills </h2>
     <div class="skills-table" data-aos="fade-up" data-aos-offset="250">
@@ -199,14 +198,16 @@
       <i class="fab fa-github github skill"></i>
     </div>
   </section>
-  <br>
   <section class="contacts" id="contacts">
     <h2 class="heading" data-aos="fade" data-aos-offset="150"> Contact </h2>
     <div data-aos="fade-up" data-aos-offset="100">
-      <a href="https://www.linkedin.com/in/blitz450" target="_blank">
+      <a href="https://www.linkedin.com/in/blitz450" target="_blank" rel="noopener">
         <i class="fab fa-linkedin contact"></i>
       </a>
-      <a href="https://github.com/blitz450/" target="_blank">
+      <a href="mailto:saurabh.chauhan450@gmail.com">
+        <i class="fas fa-envelope-square contact"></i>
+      </a>
+      <a href="https://github.com/blitz450/" target="_blank" rel="noopener">
         <i class="fab fa-github-square contact"></i>
       </a>
     </div>
@@ -222,6 +223,7 @@
     </p>
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script>
     AOS.init({
       offset: 375, // offset (in px) from the original trigger point

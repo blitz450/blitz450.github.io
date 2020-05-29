@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+  <title>Saurabh Chauhan</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Web development projects Saurabh Chauhan" />
+  <meta name="description" content="Web development projects portfolio Saurabh Chauhan" />
   <meta />
   <link rel="favicon/apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
@@ -17,9 +18,10 @@
   <link rel="stylesheet" href="queries.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <title>Saurabh Chauhan</title>
 </head>
 
 <body class="wrapper">
@@ -28,6 +30,7 @@
     <a href="#about" class="sidebar-item">About</a>
     <a href="#projects" class="sidebar-item">Projects</a>
     <a href="#skills" class="sidebar-item">Skills</a>
+    <!-- <a href="#experience" class="sidebar-item">Exp</a> -->
     <a href="#contacts" class="sidebar-item">Contact</a>
     <!-- <a href="https://github.com/blitz450/" class="sidebar-item" target="_blank"> GitHub</a>
       <a href="https://www.linkedin.com/in/blitz450" class="sidebar-item" target="_blank">Linkedin</a> -->
@@ -53,20 +56,20 @@
         <div class="source-text">
           <pre>
           <code class="code">
-      <span class="var">let</span> <span class="bio">biography </span>= {
-          <span class="obj">firstName</span>: 'Saurabh',
-          <span class="obj">lastName</span>: 'Chauhan',
-          <span class="obj">location</span>: 'Delhi, India',
-          <span class="obj">isStudent</span>: true,
-          <span class="obj">college</span>: 'Maharaja Agrasen 
-                            Institute 
-                            of Technology',
-          <span class="obj">year</span>: 'PreFinal Year',
-          <span class="obj">hobbies</span>: [sports.football,
-                          'multiplayers',],
-          <span class="obj">spokenLanguages</span>: ["English", 
+            <span class="var">let</span> <span class="bio">biography </span>= {
+                <span class="obj">firstName</span>: 'Saurabh',
+                <span class="obj">lastName</span>: 'Chauhan',
+                <span class="obj">location</span>: 'Delhi, India',
+                <span class="obj">isStudent</span>: true,
+                <span class="obj">college</span>: 'Maharaja Agrasen 
+                              Institute 
+                              of Technology',
+                <span class="obj">year</span>: 'PreFinal Year',
+                <span class="obj">hobbies</span>: [sports.football,
+                              'multiplayers',],
+                <span class="obj">spokenLanguages</span>: ["English", 
                                   "Hindi"],
-      };
+                };
           </code>
         </pre>
         </div>
@@ -105,10 +108,10 @@
     </p>
   </section>
   <section class="projects" id="projects">
-    <h2 class="heading" data-aos="fade">Projects</h2>
-    <div class="port-container js-flickity" data-aos="fade-up"
+    <h2 class="heading" data-aos="fade" data-aos-offset="350">Projects</h2>
+    <div class="port-container js-flickity" data-aos="fade-up" data-aos-offset="350"
       data-flickity-options='{ "cellAlign": "center", "contain": true , "freeScroll": true}'>
-      <div class="photo-container " data-aos="fade-up">
+      <div class="photo-container " data-aos="fade-up" data-aos-offset="350">
         <div class="card">
           <div class="img-frame">
             <a href="http://blitz450.github.io/image-analyser" target="_blank">
@@ -125,7 +128,7 @@
           </div>
         </div>
       </div>
-      <div class="photo-container " data-aos="fade-up">
+      <div class="photo-container " data-aos="fade-up" data-aos-offset="350">
         <div class="card">
           <div class="img-frame">
             <a href="https://thawing-mesa-92554.herokuapp.com/" target="_blank">
@@ -141,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div class="photo-container" data-aos="fade-up">
+      <div class="photo-container" data-aos="fade-up" data-aos-offset="350">
         <div class="card">
           <div class="img-frame">
             <a href="https://blitz450.github.io/hashKittens" target="_blank">
@@ -161,7 +164,7 @@
           </div>
         </div>
       </div>
-      <div class="photo-container" data-aos="fade-up">
+      <div class="photo-container" data-aos="fade-up" data-aos-offset="350">
         <div class="card">
           <div class="img-frame">
             <a href="https://github.com/blitz450/chatroom" target="_blank">
@@ -184,18 +187,105 @@
   <section class="skills" id="skills">
     <h2 class="heading" data-aos="fade" data-aos-offset="250"> Skills </h2>
     <div class="skills-table" data-aos="fade-up" data-aos-offset="250">
-      <i class="fab fa-html5 html skill"></i>
-      <i class="fab fa-css3-alt css skill"></i>
-      <i class="fab fa-js-square js skill"></i>
-      <i class="fab fa-python python skill"></i>
-      <i class="fab fa-node node skill"></i>
-      <i class="fab fa-bootstrap bootstrap skill "></i>
-      <i class="fab fa-mdb skill"></i>
-      <i class="fab fa-react react skill"></i>
-      <i class="fab fa-aws aws skill"></i>
-      <!-- <i class="fab fa-docker docker skill"></i> -->
-      <i class="fab fa-git-square git skill"></i>
-      <i class="fab fa-github github skill"></i>
+      <i class="devicon-html5-plain-wordmark colored skill"></i>
+      <i class="devicon-css3-plain-wordmark colored skill"></i>
+      <i class="devicon-javascript-plain colored skill"></i>
+      <i class="devicon-cplusplus-line-wordmark colored skill"></i>
+      <i class="devicon-python-plain-wordmark colored skill"></i>
+      <i class="devicon-react-original-wordmark colored skill"></i>
+      <i class="devicon-nodejs-plain-wordmark colored skill big"></i>
+      <i class="devicon-express-original-wordmark colored skill big"></i>
+      <i class="devicon-postgresql-plain-wordmark colored skill"></i>
+      <i class="devicon-mongodb-plain-wordmark colored skill"></i>
+      <i class="devicon-nginx-original skill big"></i>
+      <i class="devicon-linux-plain colored skill"></i>
+      <i class="devicon-heroku-original-wordmark colored skill"></i>
+      <i class="devicon-amazonwebservices-plain-wordmark colored skill big"></i>
+      <i class="devicon-photoshop-line colored  skill"></i>
+      <i class="devicon-illustrator-line colored  skill"></i>
+      <i class="devicon-git-plain-wordmark colored skill big"></i>
+
+    </div>
+  </section>
+  <section class="experience" id="experience">
+    <!-- <h2 class="heading"> Experience </h2> -->
+    <div class="exp-container timeline">
+      <ul>
+        <li>
+          <div class="content">
+            <h3> <i>Backend Developer</i><br>@ Metvy</h3>
+            <p>
+              > API documentation and major code refactoring.
+              <br>> Setup nginx with SSL as https listener.
+            </p>
+          </div>
+          <div class="time">
+            <h4>May '20 - Present</h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h3><i>Mentor, Education Outreach Program</i><br>@ GirlScript</h3>
+            <p>
+              Mentored and taught students for course 'Journey with JavaScript'
+            </p>
+          </div>
+          <div class="time">
+            <h4>20 Apr - 1 May '20</h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h3> <i>Student Developer</i><br>@ Crio Launch 2020</h3>
+            <p>
+              10 weeks "Learn by doing" micro-experience.
+              <br> Here's my <a href="https://criodo.github.io/Crio-Launch-Feb-2020-saurabh-chauhan450/" target="_blank"
+                rel="noopener">Crio Portfolio</a>
+            </p>
+          </div>
+          <div class="time">
+            <h4>Feb - Apr '20</h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h3> <i>Backend Developer</i><br>@ Metvy</h3>
+            <p>
+              > Integrated ML models with the backend routes.
+              <br>> Maintained backend of app running on aws ec2.
+              <br>> Implemented app features.
+            </p>
+          </div>
+          <div class="time">
+            <h4>Oct '19 - Feb '20
+            </h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h3> <i>Web Developer Intern</i><br>@ DevelopHowTo</h3>
+            <p>
+              > Designed the database / backend of web app.
+              <br>> Worked on mapbox , geolocation api , heatmaps and forms in frontend.
+              <br>> Integrated API with frontend, setup S3 for image uploads and deployed webapp.
+            </p>
+          </div>
+          <div class="time">
+            <h4>Apr - Jul '19</h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h3> <i>Graphics Designer</i><br>@ Signature Visas</h3>
+            <p>Designed infographics, website banners, and marketing graphics.
+            </p>
+          </div>
+          <div class="time">
+            <h4>Sep - Nov '18</h4>
+          </div>
+        </li>
+        <div style="clear:both;"></div>
+      </ul>
     </div>
   </section>
   <section class="contacts" id="contacts">
@@ -226,7 +316,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script>
     AOS.init({
-      offset: 375, // offset (in px) from the original trigger point
+      offset: 350, // offset (in px) from the original trigger point
       delay: 0, // values from 0 to 3000, with step 50ms
       duration: 1000, // values from 0 to 3000, with step 50ms
       // once: true,

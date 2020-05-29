@@ -22,7 +22,7 @@ html {
     
 }
 
-.port-container {
+.port-container, .exp-container {
     /* grid-column: full-start / full-end; */
     /* display: flex;
     flex-wrap: wrap;
@@ -147,7 +147,13 @@ html {
     opacity: 100%;
 }
 
+.about {
+    grid-column: full-start / full-end;
+    
+}
 
+
+/* Headings Style */
 .heading {
     width: 101%;
     grid-column: col-start 4 / col-end 5;
@@ -164,11 +170,6 @@ html {
      padding: 1rem 1rem 1rem 1rem; 
 }
 
-.about {
-    grid-column: full-start / full-end;
-    
-}
-
 .about .heading {
     font-weight: 500;
     color: rgb(255, 255, 255);
@@ -177,7 +178,7 @@ html {
     /* text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.7); */
 }
 
-.projects .heading {
+.projects .heading, .experience .heading {
     font-weight: 500;
     color: rgb(0, 0, 0);
     background-color: rgb(221, 221, 221);
@@ -191,9 +192,6 @@ html {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto 5rem;
 }
-
-
-
 
 ::selection {
     background-color: rgba(221, 51, 102, 0.6);
@@ -230,8 +228,6 @@ html {
     grid-column: 2/-1;
     background: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(53, 67, 115));
 }
-
-
 .picture_biography {
     width: auto;
     height: 300px;
@@ -248,21 +244,13 @@ html {
     
 }
 
-h3 {
-    text-align: center;
-    font-size: 1.7rem;
-  
-}
-
 .abouttext {
     text-align: center;
     font-size: 15px;
   
 }
 
-/* #projects{
-    margin-top: 0;
-} */
+/* Project section styling */
 
 /* big buttons, no circle */
 .flickity-prev-next-button {
@@ -331,9 +319,7 @@ h3 {
 
 .app__heading span {
     text-transform: lowercase;
-}
-    
-     
+}  
 .app__text {
         display: block;
         padding: 0.8rem;
@@ -341,8 +327,7 @@ h3 {
         font-size: 1.2rem;
         line-height: 130%;
         color: #333;
-    }
-    
+}  
 .app__challenge ,.app__achievements{
         color: #333;
         font-size: 1rem;
@@ -350,20 +335,15 @@ h3 {
         padding: 1rem;
         border-top: 1px solid #dedede; 
 }
-
-
-
 .app__challenge span {
             color: #333;
             font-weight: 600;
-        } 
-    
-
+}
 .app__achievements span {
             color: #333;
             font-weight: 600;
-        }
-    
+}
+
 .site-button:link,
 .site-button:visited {
     text-decoration: none;
@@ -381,7 +361,6 @@ h3 {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-
 .site-button:hover,
 .site-button:active {
     animation: button 25s linear infinite;
@@ -389,11 +368,11 @@ h3 {
     color: #333;
     transition: all .5s;
 }
+
 .coders-link:link,
 .coders-link:visited {
     color: #333;
 }
-
 .coders-link:hover,
 .coders-link:active {
     color: rgba(51, 51, 51, 0.5);
@@ -408,8 +387,8 @@ h3 {
     }
 }
 
-
-.projects , .skills, .contacts {
+/* Section headers */
+.projects , .skills, .contacts{
     width: 100%;
     grid-column: full-start / full-end;
     display: flexbox;
@@ -419,13 +398,151 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+.experience {
+    width: 100%;
+    grid-column: full-start / full-end;
+    display: flexbox;
+    flex-wrap: wrap;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* timeline section style */
+.timeline{
+    position: relative;
+    margin: 50px auto;
+    /* padding: 40px 0; */
+    /* width: 1000px; */
+    box-sizing: border-box;
+}
+.timeline:before{
+    content: '';
+    position: absolute;
+    left:50%;
+    width:2px;
+    height:100%;
+    background:#474747;
+    z-index: 1;
+}
+.timeline ul{
+    margin:0;
+    padding: 0;
+}
+.timeline ul li{
+    list-style:none;
+    position: relative;
+    width:50%;
+    margin-top: 10px;
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+}
+.timeline ul li:hover{
+    /* color:white; */
+    background: whitesmoke;
+}
+.timeline ul li:nth-child(odd){
+    float:left;
+    text-align: right;
+    clear:both;
+}
+.timeline ul li:nth-child(even){
+    float:right;
+    text-align: left;
+    clear:both;
+}
+
+.content{
+    /* padding: 0 0 20px 0; */
+}
+
+.timeline ul li:nth-child(odd):before{
+    content: '';
+    position:absolute;
+    top:22px;
+    right: -7px;
+    width:12px;
+    height:12px;
+    background: rgb(53, 67, 115);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgb(53, 67, 115, 0.274);
+    z-index: 2;
+}
+.timeline ul li:nth-child(even):before{
+    content: '';
+    position:absolute;
+    top:22px;
+    left: -5px;
+    width:12px;
+    height:12px;
+    background: rgb(53, 67, 115);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgb(53, 67, 115, 0.274);
+    z-index: 2;
+}
+
+.timeline ul li h3{
+    margin:0 ;
+    padding: 0;
+    font-family: "consolas";
+    color:rgb(27, 48, 139);
+    font-weight: 600;
+}
+
+.timeline ul li p{
+    margin:10px 0 0;
+    padding: 0;
+}
+
+.timeline ul li .time h4{
+    color:white;
+    margin: 0px;
+    padding: 0;
+    font-size: 9px;
+}
+
+.timeline ul li:nth-child(odd) .time{
+    position:absolute;
+    top:16px;
+    right:-135px;
+    margin:0px;
+    padding: 4px 12px;
+    background:rgba(6, 21, 92, 0.75);
+    border-radius: 18px;
+    box-shadow: 0 0 1px 3px rgba(6, 21, 92, 0.25);
+}
+
+.timeline ul li:nth-child(even) .time{
+    position:absolute;
+    top:16px;
+    left:-135px;
+    margin:0px;
+    padding: 4px 12px;
+    background:rgba(6, 21, 92, 0.75);
+    border-radius: 18px;
+    box-shadow: 0 0 1px 3px rgba(6, 21, 92, 0.25);
+}
+
+
+
+
+
+
+/* Skills and contact section styles */
+.skills-table{
+    padding: 20px;
+}
+
 
 .skill {
     height: 15rem;
     width: 15rem;
-    font-size: 9rem;
-    margin: 1.5rem;
+    font-size: 8rem;
+    margin: 1rem;
     color: #333;
+}
+.skills-table .big{
+    font-size: 11rem;
 }
 
 .contact{
@@ -438,47 +555,8 @@ h3 {
     color: #2485c5;
 }
 
-.html {
-    color: #e54d26;
-}
-.css {    
-    color: #3d8fc6;
-}
 
-.bootstrap {
-    color: #563d7c;
-}
-.js {
-    color: #f0db4f;
-}
-.python {
-    color: #ffd900;
-}
-
-.node {
-    color: #83CD29;
-}
-
-.react {
-    color: #61dafb;
-}
-
-.aws {
-    color: #000000;
-}
-
-/* .docker {
-    color: #1587ed;
-} */
-
-.git {
-    color: #f34f29;
-}
-
-.github {
-    color: #181616;
-}
-
+/* Foter section style */
 .footer {
     grid-column: full-start / full-end;
     height: 20rem;
@@ -488,11 +566,9 @@ h3 {
     position: relative;
     font-size: 1.5rem;    
 }
-
 .footer a{
     color: #fff;
 }
-
 .footer p {
     position: absolute;
     left: 50%;

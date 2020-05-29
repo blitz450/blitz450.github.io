@@ -58,8 +58,11 @@
     .skill {
         height: 5rem;
         width: 6rem;
-        font-size: 4rem;
-        margin: 1.5rem;
+        font-size: 5rem;
+        margin: 0.8rem;
+    }
+    .skills-table .big{
+        font-size: 7rem;;
     }
 
     .contact{
@@ -88,6 +91,29 @@
         padding: 2rem;
     } */
     
+    .timeline:before{
+        left:20px;
+        z-index: 0;
+    }
+
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even){
+        width:100%;
+        text-align:left;
+    }
+
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before{
+        top:0px;
+        left:15px;
+    }
+
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time{
+        top:-5px;
+        left:38px;
+        right:inherit;
+    }
 }
 
 @media only screen and (max-width: 449px) {

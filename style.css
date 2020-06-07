@@ -142,6 +142,7 @@ html {
 }
 
 .typewriter p {
+    width:auto;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .035em solid rgba(0, 0, 0, 0.8); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -154,7 +155,7 @@ html {
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width:417px }
+    to { width:44rem }
   }
   
   /* The typewriter cursor effect */

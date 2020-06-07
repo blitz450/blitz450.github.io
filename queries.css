@@ -51,7 +51,7 @@
         grid-row: 2 / span 1;
     }
     .animation {
-        margin-top: 78vh;
+        margin-top: 43rem;
 
     }
     
@@ -68,6 +68,11 @@
     .contact{
         font-size: 4rem;
         margin: 1.5rem;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width:43rem }
     }
 }
 
@@ -114,6 +119,11 @@
         left:38px;
         right:inherit;
     }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width:43rem }
+    }
 }
 
 @media only screen and (max-width: 449px) {
@@ -132,7 +142,7 @@
 
     @keyframes typing {
         from { width: 0 }
-        to { width:70% }
-      }
+        to { width:26rem }
+    }
      
 }

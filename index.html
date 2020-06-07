@@ -38,15 +38,22 @@
   </div>
   <header id="home" class="header">
     <div class="container">
-      <div data-aos="zoom-out" data-aos-offset="0" data-aos-easing="ease-in" data-aos-duration="1500">SAURABH
-        CHAUHAN
+      <div class='typewriter' data-aos="fade" data-aos-offset="0" data-aos-easing="ease-in" data-aos-duration="2200">
+        <p>SAURABH CHAUHAN
+        </p>
       </div>
       <img src="images/undraw.svg" alt="startup_life" />
     </div>
   </header>
   <div class="animation">
     <div class="sub-title">
-      coding
+      <script>
+        if (new Date().getHours() >= 0 && new Date().getHours() < 8) {
+          document.write("z zZ zZ z");
+        } else {
+          document.write("coding");
+        }
+      </script>
     </div>
   </div>
   <section class="about" id="about">
@@ -64,7 +71,8 @@
                 <span class="obj">college</span>: 'Maharaja Agrasen 
                               Institute 
                               of Technology',
-                <span class="obj">specialisation</span>: 'Information Technology',
+                <span class="obj">specialisation</span>: 'Information
+                             Technology',
                 <span class="obj">year</span>: 'PreFinal Year',
                 <span class="obj">interests</span>: [sports.football,
                               'multiplayers',],
@@ -132,6 +140,22 @@
       <div class="photo-container" data-aos="fade-up" data-aos-offset="350">
         <div class="card">
           <div class="img-frame">
+            <a href="https://polar-earth-16701.herokuapp.com/" target="_blank">
+              <img src="images/captcha.jpg" alt="ChatRoom" class="photo photo-1" />
+            </a>
+          </div>
+          <div class="text-container txt">
+            <h3 class="app__heading">Alt-Captcha</h3>
+            <p class="app__text"> A shot at alternatives to generic captchas</p>
+            <p class="app__challenge"><span>Challenge: </span>Captcha , Forms , OCR</p>
+            <p class="app__achievements"><span> Stack: </span> html/css/js ,flask </p>
+            <a href="https://polar-earth-16701.herokuapp.com/" class="site-button" target="_blank">Visit site</a>
+          </div>
+        </div>
+      </div>
+      <div class="photo-container" data-aos="fade-up" data-aos-offset="350">
+        <div class="card">
+          <div class="img-frame">
             <a href="https://blitz450.github.io/hashKittens" target="_blank">
               <img src="images/hk.jpg" alt="HashKittens" class="photo photo-1" />
             </a>
@@ -164,22 +188,6 @@
               Geoloction API</p>
             <p class="app__achievements"><span> Stack: </span> Sockets.io , html/css/js</p>
             <a href="https://github.com/blitz450/chatroom" class="site-button" target="_blank">Visit site</a>
-          </div>
-        </div>
-      </div>
-      <div class="photo-container" data-aos="fade-up" data-aos-offset="350">
-        <div class="card">
-          <div class="img-frame">
-            <a href="https://polar-earth-16701.herokuapp.com/" target="_blank">
-              <img src="images/captcha.jpg" alt="ChatRoom" class="photo photo-1" />
-            </a>
-          </div>
-          <div class="text-container txt">
-            <h3 class="app__heading">Alt-Captcha</h3>
-            <p class="app__text"> A shot at alternatives to generic captchas</p>
-            <p class="app__challenge"><span>Challenge: </span>Captcha , Forms , OCR</p>
-            <p class="app__achievements"><span> Stack: </span> html/css/js ,flask </p>
-            <a href="https://polar-earth-16701.herokuapp.com/" class="site-button" target="_blank">Visit site</a>
           </div>
         </div>
       </div>
@@ -228,7 +236,9 @@
           <div class="content">
             <h3><i>Mentor, Education Outreach Program</i><br>@ GirlScript</h3>
             <p>
-              Mentoring and teaching students for course 'Journey with JavaScript'
+              Mentoring and teaching students for 'Journey with JavaScript' course
+              <br><a href="https://github.com/tanisha03/Journey-with-JS" target="_blank" rel="noopener">GitHub Repo</a>
+
             </p>
           </div>
           <div class="time">
@@ -291,7 +301,7 @@
   </section>
   <section class="contacts" id="contacts">
     <h2 class="heading" data-aos="fade" data-aos-offset="150"> Contact </h2>
-    <div data-aos="fade-up" data-aos-offset="100">
+    <div data-aos="flip-up" data-aos-offset="100">
       <a href="https://www.linkedin.com/in/blitz450" target="_blank" rel="noopener">
         <i class="fab fa-linkedin contact"></i>
       </a>
@@ -304,13 +314,14 @@
     </div>
   </section>
   <footer class="footer">
+    <br>
     <a href="#home">Back to top</a>
     <p>
       &copy;
       <script>
         document.write(new Date().getFullYear())
       </script>
-      Coded with <i class="fa fa-glasses glasses"></i> by Saurabh Chauhan.
+      . Saurabh Chauhan
     </p>
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
